@@ -1,0 +1,314 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 176px;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 34px 45px;
+    filter: invert(1);
+}
+
+#logo img{
+    margin: auto;
+    height: 192px;
+    width: 211px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    /* top: 0px; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    height: 620px;
+    justify-content: center;
+    text-align: center;
+}
+
+#home .h-primary{
+    color: #787A91;
+    font-family: 'Rozha One', serif;
+    font-size: 6rem;
+}
+
+#home::before{
+    content:"";
+    background: url('Images/bg9.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 84%;
+    width: 112%;
+    z-index:-1;
+    opacity: .6;
+    top:0px;
+    left:0px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#home p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Services Section */
+#services{
+    margin: 5px;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    background: url('Images/servicesbg.jpg') no-repeat center center/cover;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 5px;
+    margin: 82px 233px;
+    border-radius: 9px;
+    box-shadow: 10px 10px #4e5479;
+    margin-bottom: 20px;
+}
+
+#services .box .kd{
+    background: url('Images/kdbg.jpg') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    color: rgb(244, 225, 225);
+}
+
+#services .box .kd img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+
+#services .box .ym{
+    background: url('Images/ymbg1.jpeg') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#services .box .ym img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+#services .box .gn{
+    background: url('Images/gnbg1.jpg') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#services .box .gn img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+#services .box .bd{
+    background: url('Images/badri.jpg') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#services .box .bd img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+
+#services1 .box1 {
+    border: 2px solid brown;
+    padding: 5px;
+    margin: 82px 233px;
+    border-radius: 9px;
+    box-shadow: 10px 10px #4e5479;
+    margin-bottom: 20px;
+}
+
+#services1 .box1 .na{
+    background: url('Images/nabg.jpg') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    color: rgb(244, 225, 225);
+}
+
+#services1 .box1 .na img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+
+#services1 .box1 .bh{
+    background: url('Images/bhbg.jpg') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#services1 .box1 .bh img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+#services1 .box1 .vof{
+    background: url('Images/vofbg.jpg') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#services1 .box1 .vof img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+#services1 .box1 .ha{
+    background: url('Images/habg.jpg') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#services1 .box1 .ha img{
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('Images/CU2.jpg') no-repeat center center /cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    padding:0.5rem;
+}
+
+#content-box form{
+    width: 40%;
+}
+
+#content-box label{
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px; 
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 4.5rem;
+    padding: 60px;
+    font-family: 'Rozha One', serif;
+    color:#0F044C;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(167, 96, 96);
+    color: white;
+    margin: 17px auto;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(112, 54, 54);
+}
+
+.center{
+    text-align:center;
+}
+
+
